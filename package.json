@@ -1,0 +1,33 @@
+{
+  "name": "meemo-desktop",
+  "version": "1.0.0",
+  "description": "https://github.com/nebulade/meemo desktop client",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaibu/meemo-desktop.git"
+  },
+  "author": "Kaibu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kaibu/meemo-desktop/issues"
+  },
+  "homepage": "https://github.com/Kaibu/meemo-desktop#readme",
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-builder": "^19.5.1"
+  },
+  "build": {
+    "appId": "Meemo",
+    "productName": "Meemo",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
+  }
+}
